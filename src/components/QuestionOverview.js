@@ -38,7 +38,7 @@ class QuestionOverview extends Component {
 					<div className="border-left ml-3 pl-3 w-100">
 						<Card.Text className="text-bold h5">Would you rather</Card.Text>
 						<Card.Text className="text-muted">{optionOne.text.slice(0, 50)}...?.</Card.Text>
-						<NavLink className="w-100 btn btn-sm btn-outline-primary" to={`/question/${id}`}>View Poll</NavLink>
+						<NavLink className="w-100 btn btn-sm btn-outline-primary" to={`/questions/${id}`}>View Poll</NavLink>
 					</div>
 				</div>
 				</Card.Body>

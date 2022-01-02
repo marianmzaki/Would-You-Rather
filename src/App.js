@@ -61,10 +61,10 @@ class App extends Component {
                         
                         <Routes>
                           {/* go to Authenticate User component in case the path is '/' - exact and pass the props */}
-                          <Route exact path="/" element = {<AuthedUserHome/> } />
-                          <Route exact path="/add" element={<NewQuestion/>} />
-                          <Route exact path="/question/:id" element={<PollPage/>} /> 
-                          <Route exact path="/leaderboard" element={<LeaderBoardList/>} />
+                          <Route path="/" element = {<AuthedUserHome/> } />
+                          <Route path="/add" element={<NewQuestion/>} />
+                          <Route path="/questions/:id" element={<PollPage/>} /> 
+                          <Route path="/leaderboard" element={<LeaderBoardList/>} />
                           <Route element = {<PageNotFound/> }/>
                         </Routes>
                       )}

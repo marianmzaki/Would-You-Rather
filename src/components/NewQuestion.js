@@ -54,7 +54,7 @@ class NewQuestion extends Component {
 
 	render() {
 		const { optionOne, optionTwo, toHome } = this.state;
-		if (toHome === true) return <Navigate to="/leaderboard" />;
+		if (toHome === true) return <Navigate to="/" />;
 		return (
             <Card>
                 <Card.Header>
